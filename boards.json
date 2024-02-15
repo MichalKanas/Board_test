@@ -1,0 +1,41 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m3",
+    "extra_flags": "-DSTM32F1",
+    "f_cpu": "72000000L",
+    "mcu": "stm32f103rbt6",
+    "product_line": "STM32F103xB"
+  },
+  "connectivity": [
+    "can"
+  ],
+  "debug": {
+    "default_tool": "stlink",
+    "jlink_device": "STM32F103RB",
+    "onboard_tools": [
+      "stlink"
+    ],
+    "openocd_board": "st_nucleo_f103rb",
+    "openocd_target": "stm32f1x"
+  },
+  "frameworks": [
+    "mbed",
+    "stm32cube",
+    "libopencm3"
+  ],
+  "name": "NUCLEO-F103RB",
+  "upload": {
+    "maximum_ram_size": 20480,
+    "maximum_size": 131072,
+    "protocol": "stlink",
+    "protocols": [
+      "jlink",
+      "stlink",
+      "blackmagic",
+      "serial"
+    ]
+  },
+  "url": "https://www.st.com/en/evaluation-tools/nucleo-f103rb.html",
+  "vendor": "ST"
+}
